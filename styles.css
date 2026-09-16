@@ -137,23 +137,26 @@ body {
 
 /* Avatar in MUJI style: clean, unembellished circle */
 .avatar-container {
-    width: 80px;
-    height: 80px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    background: var(--bg-subtle);
+    background: #fff8dc;
     border: 2px solid #e0dad0;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
     overflow: hidden;
+    padding: 6px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
 }
 
 .avatar-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    display: none;
+    object-fit: contain;
+    display: block;
+    border-radius: 50%;
 }
 
 .avatar-initials {
@@ -161,6 +164,7 @@ body {
     font-weight: 600;
     color: var(--muji-brown);
     letter-spacing: 0.05em;
+    display: none;
 }
 
 .profile-tag {
